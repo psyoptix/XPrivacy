@@ -45,21 +45,21 @@
 
 <h4>For category:</h4>
 
-| Value | as seen in XPrivacy| Meaning               |
-|-------|--------------------|-----------------------|
-| 0     | [ ] [?]            | not restricted, ask   |
-| 1     | [x] [?]            | restricted, ask       |
-| 2     | [ ] [ ]            | not restricted, asked |
-| 3     | [x] [ ]            | restricted, asked     |
+| Value | as seen in XPrivacy| Meaning                   |
+|-------|--------------------|---------------------------|
+| 0     | [ ] [?]            | not restricted. asked     |
+| 1     | [x] [?]            | restricted. asked         |
+| 2     | [ ] [ ]            | not restricted. not asked |
+| 3     | [x] [ ]            | restricted. not asked     |
 
 <h4>For method:</h4>
 
-| Value | as seen in XPrivacy| Meaning               |
-|-------|--------------------|-----------------------|
-| 0     | [x] [?]            | restricted, ask       |
-| 1     | [ ] [?]            | not restricted, ask   |
-| 2     | [x] [ ]            | restricted, asked     |
-| 3     | [ ] [ ]            | not restricted, asked |
+| Value | as seen in XPrivacy| Meaning                   |
+|-------|--------------------|---------------------------|
+| 0     | [x] [?]            | restricted. asked         |
+| 1     | [ ] [?]            | not restricted. asked     |
+| 2     | [x] [ ]            | restricted. not asked     |
+| 3     | [ ] [ ]            | not restricted. not asked |
 
 
 <p>*NOTE: Although the 'method' field doesn't always contain data, it is still NOT NULL. To query empty entries: <code>WHERE method=''</code></p>
